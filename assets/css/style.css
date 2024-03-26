@@ -3,14 +3,14 @@
 h1,
 h2,
 h3 {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 p,
 li,
 a,
 small {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Font hierarchy */
@@ -31,12 +31,16 @@ p {
   color: hsla(0, 0%, 0%, 0.8);
 }
 
+
+@media only screen and (max-width: 767px) {
+
 #parrafo {
   font-size: large;
   background-color: palevioletred;
 }
 
 @media only screen and (max-width : 767px) {
+
 
   h1 {
     font-size: 2em;
@@ -49,13 +53,16 @@ p {
   h3 {
     font-size: 1.375em;
   }
-
 }
 
 /* Button */
 
 .button_di-buffala {
+
+  background-color: #325dff;
+
   background-color: red;
+
   border-radius: 30px;
   padding: 2rem 6rem;
   color: #fff;
@@ -64,14 +71,14 @@ p {
 }
 
 .button_di-buffala:hover {
-  background-color: hsla(227, 100%, 60%, .1);
-  color: #325DFF;
+  background-color: hsla(227, 100%, 60%, 0.1);
+  color: #325dff;
 }
 
 /* Navbar */
 
 .navbar_di-buffala {
-  background-color: #325DFF;
+  background-color: #325dff;
   color: hsla(0, 100%, 100%, 0.52);
 }
 
@@ -83,7 +90,11 @@ p {
   max-width: 120px;
 }
 
+
+.navbar-nav > li > a {
+
 .navbar-nav>li>a {
+
   color: #fff;
   text-shadow: none;
   text-transform: uppercase;
@@ -91,7 +102,7 @@ p {
 
 .nav>li>a:hover {
   background-color: initial;
-  color: hsla(0, 0%, 100%, .5);
+  color: hsla(0, 0%, 100%, 0.5);
 }
 
 .navbar {
@@ -116,13 +127,12 @@ p {
 }
 
 .header_di-buffala p {
-  color: hsla(0, 0%, 100%, .8);
+  color: hsla(0, 0%, 100%, 0.8);
   line-height: 22px;
   padding: 1rem 30vw;
 }
 
-@media only screen and (max-width : 767px) {
-
+@media only screen and (max-width: 767px) {
   .header_di-buffala {
     height: 500px;
     padding-top: 100px;
@@ -136,7 +146,6 @@ p {
   .header_di-buffala p {
     padding: 1rem 4rem;
   }
-
 }
 
 /* Blog */
@@ -164,7 +173,7 @@ p {
   padding-right: 8vw;
 }
 
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width: 767px) {
   .blog__inner {
     padding-top: 2vh;
     padding-left: 15vw;
@@ -196,7 +205,7 @@ p {
 }
 
 .features__inner {
-  border: 1px solid hsla(0, 0%, 0%, .1);
+  border: 1px solid hsla(0, 0%, 0%, 0.1);
   border-radius: 3px;
   padding: 5rem 0rem;
   margin: 3rem 1rem;
@@ -207,11 +216,11 @@ p {
 }
 
 .features__inner p {
-  padding: .5rem 5rem;
+  padding: 0.5rem 5rem;
 }
 
 .features__inner-icon {
-  background-color: #325DFF;
+  background-color: #325dff;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -227,8 +236,7 @@ p {
   right: 30px;
 }
 
-@media only screen and (max-width : 767px) {
-
+@media only screen and (max-width: 767px) {
   .features {
     padding-bottom: 4rem;
   }
@@ -251,7 +259,6 @@ p {
     font-size: 1.7em;
     padding-top: 1rem;
   }
-
 }
 
 /* Video */
@@ -277,8 +284,7 @@ p {
   color: #fff;
 }
 
-@media only screen and (max-width : 767px) {
-
+@media only screen and (max-width: 767px) {
   .video {
     padding-left: 0;
   }
@@ -295,7 +301,6 @@ p {
   .video__inner p {
     visibility: hidden;
   }
-
 }
 
 /* Portfolio */
@@ -347,8 +352,7 @@ p {
   background-image: url("../img/portfolio-3.jpg");
 }
 
-@media only screen and (max-width : 767px) {
-
+@media only screen and (max-width: 767px) {
   .portfolio {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -387,14 +391,12 @@ p {
   .portfolio__inner__image-bottom {
     display: none;
   }
-
 }
 
 /* Footer */
 
-
 .footer_di-buffala {
-  background-color: #325DFF;
+  background-color: #325dff;
   padding: 5vw 1rem;
   text-align: center;
 }
@@ -402,4 +404,40 @@ p {
 .footer_di-buffala small {
   color: #fff;
   font-size: 1em;
+
 }
+
+/* boton para subir */
+#scroll {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: #325dff;
+  text-indent: -9999px;
+  display: none;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+}
+#scroll span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -12px;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #ffffff;
+}
+#scroll:hover {
+  background-color: #3c86e7;
+  opacity: 1;
+  filter: "alpha(opacity=100)";
+  -ms-filter: "alpha(opacity=100)";
+}
+}
+
