@@ -31,7 +31,17 @@ p {
   color: hsla(0, 0%, 0%, 0.8);
 }
 
+
 @media only screen and (max-width: 767px) {
+
+#parrafo {
+  font-size: large;
+  background-color: palevioletred;
+}
+
+@media only screen and (max-width : 767px) {
+
+
   h1 {
     font-size: 2em;
   }
@@ -48,7 +58,11 @@ p {
 /* Button */
 
 .button_di-buffala {
+
   background-color: #325dff;
+
+  background-color: red;
+
   border-radius: 30px;
   padding: 2rem 6rem;
   color: #fff;
@@ -67,6 +81,7 @@ p {
   background-color: #325dff;
   color: hsla(0, 100%, 100%, 0.52);
 }
+
 .icon-bar {
   background-color: #fff;
 }
@@ -75,12 +90,17 @@ p {
   max-width: 120px;
 }
 
+
 .navbar-nav > li > a {
+
+.navbar-nav>li>a {
+
   color: #fff;
   text-shadow: none;
   text-transform: uppercase;
 }
-.nav > li > a:hover {
+
+.nav>li>a:hover {
   background-color: initial;
   color: hsla(0, 0%, 100%, 0.5);
 }
@@ -146,6 +166,7 @@ p {
 .blog__inner h3 {
   font-size: 3em;
 }
+
 .blog__inner p {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -158,6 +179,7 @@ p {
     padding-left: 15vw;
     padding-bottom: 5vh;
   }
+
   .blog__inner h3 {
     font-size: 2em;
   }
@@ -382,6 +404,7 @@ p {
 .footer_di-buffala small {
   color: #fff;
   font-size: 1em;
+
 }
 
 /* boton para subir */
@@ -416,3 +439,5 @@ p {
   filter: "alpha(opacity=100)";
   -ms-filter: "alpha(opacity=100)";
 }
+}
+
