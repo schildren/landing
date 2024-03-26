@@ -41,7 +41,6 @@ p {
 
 @media only screen and (max-width : 767px) {
 
-
   h1 {
     font-size: 2em;
   }
@@ -58,11 +57,7 @@ p {
 /* Button */
 
 .button_di-buffala {
-
-  background-color: #325dff;
-
   background-color: red;
-
   border-radius: 30px;
   padding: 2rem 6rem;
   color: #fff;
@@ -92,9 +87,6 @@ p {
 
 
 .navbar-nav > li > a {
-
-.navbar-nav>li>a {
-
   color: #fff;
   text-shadow: none;
   text-transform: uppercase;
