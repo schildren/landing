@@ -1,26 +1,23 @@
 /* Global Styles */
 
-h1,
-h2,
-h3 {
-  font-family: "Lato", sans-serif;
+
+h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
 }
 
-p,
-li,
-a,
-small {
-  font-family: "Poppins", sans-serif;
+p, li, a, small {
+  font-family: 'Poppins', sans-serif;
+
 }
 
 /* Font hierarchy */
 
 h1 {
-  font-size: 3em;
+ font-size: 3em;
 }
 
 h2 {
-  font-size: 2.25em;
+ font-size: 2.25em;
 }
 
 h3 {
@@ -42,11 +39,11 @@ p {
 @media only screen and (max-width : 767px) {
 
   h1 {
-    font-size: 2em;
+   font-size: 2em;
   }
 
   h2 {
-    font-size: 1.625em;
+   font-size: 1.625em;
   }
 
   h3 {
@@ -57,26 +54,27 @@ p {
 /* Button */
 
 .button_di-buffala {
-  background-color: red;
+  background-color: #e3ad5d;
   border-radius: 30px;
   padding: 2rem 6rem;
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .button_di-buffala:hover {
-  background-color: hsla(251, 79%, 32%, 0.562);
-  color: #ffffff;
+  background-color: hsla(227, 100%, 60%, .1);
+  color: #e3ad5d;
+
 }
 
 /* Navbar */
 
 .navbar_di-buffala {
-  background-color: #325dff;
+  background-color: #e3ad5d;
   color: hsla(0, 100%, 100%, 0.52);
 }
-
 .icon-bar {
   background-color: #fff;
 }
@@ -85,16 +83,14 @@ p {
   max-width: 120px;
 }
 
-
-.navbar-nav > li > a {
+.navbar-nav > li > a{
   color: #fff;
   text-shadow: none;
   text-transform: uppercase;
 }
-
-.nav>li>a:hover {
+.nav > li > a:hover {
   background-color: initial;
-  color: hsla(0, 0%, 100%, 0.5);
+  color: hsla(0, 0%, 0%, 0.5);
 }
 
 .navbar {
@@ -115,13 +111,15 @@ p {
 
 .header_di-buffala h1 {
   color: #fff;
-  font-size: 5em;
+  font-size: 4em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .header_di-buffala p {
   color: hsla(0, 0%, 100%, 0.8);
   line-height: 22px;
   padding: 1rem 30vw;
+  text-shadow: 2px 2px 4px rgba(1, 0, 0, 1.5);
 }
 
 @media only screen and (max-width: 767px) {
@@ -158,7 +156,6 @@ p {
 .blog__inner h3 {
   font-size: 3em;
 }
-
 .blog__inner p {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -171,7 +168,6 @@ p {
     padding-left: 15vw;
     padding-bottom: 5vh;
   }
-
   .blog__inner h3 {
     font-size: 2em;
   }
@@ -196,8 +192,9 @@ p {
   padding: 1rem 15vw;
 }
 
-.features__inner {
-  border: 1px solid hsla(0, 0%, 0%, 0.1);
+
+.features__inner{
+  border: 1px solid hsla(0, 0%, 0%, .1);
   border-radius: 3px;
   padding: 5rem 0rem;
   margin: 3rem 1rem;
@@ -212,7 +209,7 @@ p {
 }
 
 .features__inner-icon {
-  background-color: #325dff;
+  background-color: #e3ad5d;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -220,7 +217,7 @@ p {
   position: relative;
 }
 
-.svg-inline--fa {
+.svg-inline--fa  {
   color: #fff;
   font-size: 40px;
   position: absolute;
@@ -378,9 +375,7 @@ p {
     padding: 1rem 8vw 1rem 0;
   }
 
-  .portfolio__inner__image-top,
-  .portfolio__inner__image-middle,
-  .portfolio__inner__image-bottom {
+  .portfolio__inner__image-top, .portfolio__inner__image-middle, .portfolio__inner__image-bottom {
     display: none;
   }
 }
@@ -388,7 +383,7 @@ p {
 /* Footer */
 
 .footer_di-buffala {
-  background-color: #325dff;
+  background-color: #e3ad5d;
   padding: 5vw 1rem;
   text-align: center;
 }
